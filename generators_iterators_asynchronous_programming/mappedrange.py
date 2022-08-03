@@ -3,6 +3,7 @@ import logging
 
 logger = logging.getLogger()
 
+
 class MappedRange:
     """Apply a transformation to a range of numbers."""
 
@@ -18,7 +19,6 @@ class MappedRange:
 
     def __len__(self):
         return len(self._wrapped)
-
 
 
 if __name__ == '__main__':

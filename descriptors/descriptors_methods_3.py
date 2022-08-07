@@ -37,10 +37,12 @@ class User:
 admin = User("root", "root@d.com", ["admin"])
 user = User("user", "user1@d.com", ["email", "helpdesk"])
 
+# What if the administrator tries to delete his email?
 print(admin.email)
 del admin.email
 print(admin.email)
 
+# What if an user tries to delete his email?
 print(user.username)
 admin.username = "admin1"
 print(admin.username)
@@ -52,6 +54,8 @@ except AttributeError:
 
 # user.email = None
 # del user.email
+
+# what about other attributes?
 print(user.email)
 print(user.username)
 user.username = "song1"

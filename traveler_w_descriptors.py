@@ -50,3 +50,4 @@ alice.current_city = "Brussels"
 alice.current_city = "Amsterdam"
 
 print(alice.current_city)
+print(alice.cities_visited)

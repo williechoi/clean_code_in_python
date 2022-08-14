@@ -1,4 +1,4 @@
-class DynamicAttributes:
+class DynAttributes:
 
     def __init__(self, attribute):
         self.attribute = attribute
@@ -10,7 +10,7 @@ class DynamicAttributes:
         raise AttributeError(f"{self.__class__.__name__} has no attribute {attr}")
 
 
-dyn = DynamicAttributes("value")
+dyn = DynAttributes("value")
 print(dyn.attribute)
 
 print(dyn.fallback_test)

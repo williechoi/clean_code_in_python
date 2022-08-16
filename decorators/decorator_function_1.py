@@ -1,6 +1,9 @@
 # decorator_function_1.py
+
 import logging
 from functools import wraps
+
+RETRIES_LIMIT = 3
 
 
 class ControlledException(Exception):
@@ -11,7 +14,6 @@ def retry(operation):
     @wraps(operation)
     def wrapped(*args, **kwargs):
         last_raised = None
-        RETRIES_LIMIT = 3
         for _ in range(RETRIES_LIMIT):
             try:
                 return operation(*args, **kwargs)

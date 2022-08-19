@@ -3,10 +3,12 @@ import random
 
 def coroutine(func):
     """A decorator to automatically prime coroutines"""
+
     def start(*args, **kwargs):
         cr = func(*args, **kwargs)
         next(cr)
         return cr
+
     return start
 
 

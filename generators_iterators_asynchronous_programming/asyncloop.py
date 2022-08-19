@@ -3,6 +3,7 @@
 import asyncio
 import time
 
+
 async def main():
     print(f"{time.ctime()} Hello!")
     await asyncio.sleep(1.0)
@@ -21,9 +22,3 @@ group = asyncio.gather(*pending, return_exceptions=True)
 
 loop.run_until_complete(group)
 loop.close()
-
-
-    
-    
-    
-    

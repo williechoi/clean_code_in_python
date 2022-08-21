@@ -22,6 +22,7 @@ async def say_after(delay: int, what: str):
     await asyncio.sleep(delay)
     print(random.choice(c) + what + eofc)
 
+
 async def main():
     task1 = asyncio.create_task(say_after(1, 'hello'))
     task2 = asyncio.create_task(say_after(2, 'guys'))
@@ -33,5 +34,5 @@ async def main():
 
     print(f"finished at {time.strftime('%X')}")
 
-asyncio.run(main())
 
+asyncio.run(main())

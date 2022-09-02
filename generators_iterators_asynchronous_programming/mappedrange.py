@@ -26,4 +26,3 @@ if __name__ == '__main__':
     print(mr[0])
     print(mr[-1])
     print(list(mr))
-    

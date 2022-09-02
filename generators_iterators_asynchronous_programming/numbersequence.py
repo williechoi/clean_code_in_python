@@ -97,6 +97,7 @@ print(next(si))
 print(next(si))
 print(next(si))
 
+
 # for _ in SequenceIterator(): pass -> this code throws error
 
 
@@ -122,4 +123,3 @@ mr = MappedRange(abs, -10, 5)
 print(mr[0])
 print(mr[1])
 print(list(mr))
-

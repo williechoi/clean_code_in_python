@@ -24,6 +24,3 @@ Simple is better than complex.
 
 각각의 폴더는 각각 Clean code in python의 
 예제들을 담고 있습니다.
-
-Also, there are some practices of python design patterns in this repository
-

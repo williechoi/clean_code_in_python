@@ -22,5 +22,5 @@ Simple is better than complex.
 ...
 ```
 
-각각의 폴더는 각각 Clean code in python의 
+각각의 폴더는 각각 Clean code in Python의 
 예제들을 담고 있습니다.
